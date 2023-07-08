@@ -1,6 +1,8 @@
 import 'package:floward/widget/textbutton_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'admin_home_screen.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -36,7 +38,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
@@ -59,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 5,),
+                const SizedBox(height: 5,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -67,16 +69,16 @@ class LoginScreen extends StatelessWidget {
                       width: 150,
                       child: TextButtonWidget(callback: () {
 
-                      }, height: 50, width: 145, text: 'forgot password',color: Colors.white,colorText: Color.fromRGBO(0, 140, 158, 1),),
+                      }, height: 50, width: 145, text: 'forgot password',color: Colors.white,colorText: const Color.fromRGBO(0, 140, 158, 1),),
                     ),
                     SizedBox(width: MediaQuery.of(context).size.width*0.1,)
                   ],
                 )
               ],
             ),
-            SizedBox(height: 40,),
+            const SizedBox(height: 40,),
             TextButtonWidget(callback: () {
-
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminHomeScreen(),));
             }, height: 50, width: MediaQuery.of(context).size.width*0.5, text: 'login', color: Colors.cyan[900], colorText: Colors.white)
           ],
         ),

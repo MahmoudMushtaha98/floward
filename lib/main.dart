@@ -1,3 +1,4 @@
+import 'package:floward/screen/regester_screen.dart';
 import 'package:flutter/material.dart';
 import 'screen/splash_screen.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: RegesterScreen(),
     );
   }
 }

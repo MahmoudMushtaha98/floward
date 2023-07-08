@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => IntroductionScreen()),
       );
@@ -27,7 +27,6 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Colors.white,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset('images/cfe44b43-9be6-4985-89a7-db3b56d0fbe7.jpg'),
             Image.asset('images/1c755d78-7404-473f-a7bb-96c6a16480ed.jpg'),
