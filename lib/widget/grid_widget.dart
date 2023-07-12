@@ -9,36 +9,34 @@ class GridViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Stack(
-          children: [
-            Container(
-              width: a,
-              height: a,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Colors.cyan[900],
-
-              ),
-            ),
-            Container(
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
             width: a,
             height: a,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              color: Colors.black.withOpacity(0.4),
+              color: Colors.cyan[900],
 
             ),
-            child: Text(
-              gridTitle,
-              style: const TextStyle(color: Colors.white,fontSize: 20,shadows: [
+          ),
+          Container(
+          width: a,
+          height: a,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
 
-              ]),
-            ),
-          ),]
-        )
+          ),
+          child: Text(
+            gridTitle,
+            style: const TextStyle(color: Colors.white,fontSize: 20,shadows: [
+
+            ]),
+          ),
+        ),]
       ),
     );
   }

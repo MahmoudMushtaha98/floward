@@ -6,15 +6,16 @@ class HomeScreen extends StatelessWidget {
 
   List<String> data=[
     'Transfer',
-    'Po receive',
-    'On head',
-    'count'
+    'Po Receive',
+    'On Head',
+    'Count'
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.only(top: 100,left: 8,right: 8),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 300,
@@ -27,7 +28,7 @@ class HomeScreen extends StatelessWidget {
               gridTitle: data[index],
             );
           },
-itemCount: data.length,
+          itemCount: data.length,
         ),
       ),
     );

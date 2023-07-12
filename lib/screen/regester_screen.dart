@@ -82,12 +82,13 @@ class _RegesterScreenState extends State<RegesterScreen> {
                     if(!selectedOptionB!.contains('warehome'))...[
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.7,
-                        height: 42,
+                        height: 50,
                         child: TextFormField(
                           controller: location,
                           keyboardType: TextInputType.emailAddress,
                           style: const TextStyle(color: Color.fromRGBO(0, 140, 158, 1)),
                           decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                             label: Text(
                               'Location',
                               style: TextStyle(
@@ -104,12 +105,13 @@ class _RegesterScreenState extends State<RegesterScreen> {
                       const SizedBox(height: 20,),
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.7,
-                        height: 42,
+                        height: 50,
                         child: TextFormField(
                           controller: username,
                           keyboardType: TextInputType.emailAddress,
                           style: const TextStyle(color: Color.fromRGBO(0, 140, 158, 1)),
                           decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                             label: Text(
                               'Username',
                               style: TextStyle(
@@ -126,13 +128,14 @@ class _RegesterScreenState extends State<RegesterScreen> {
                       const SizedBox(height: 20,),
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.7,
-                        height: 42,
+                        height: 50,
                         child: TextFormField(
                           controller: password,
                           obscureText: true,
                           keyboardType: TextInputType.emailAddress,
                           style: const TextStyle(color: Color.fromRGBO(0, 140, 158, 1)),
                           decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                             label: Text(
                               'Password',
                               style: TextStyle(
@@ -142,6 +145,7 @@ class _RegesterScreenState extends State<RegesterScreen> {
                                 borderSide: BorderSide(
                                   color: Color.fromRGBO(0, 140, 158, 1),
                                 ),
+
                                 borderRadius: BorderRadius.all(Radius.circular(10))),
                           ),
                         ),
